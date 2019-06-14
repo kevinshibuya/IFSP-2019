@@ -14,7 +14,7 @@ namespace ConsoleApp2
             string[] sex = new string[3];
             int[] age = new int[3];
 
-            for(var i = 0; i < 3; i++)
+            for (var i = 0; i < 3; i++)
             {
                 Console.Write("Enter a name: ");
                 name[i] = Console.ReadLine();
@@ -22,7 +22,7 @@ namespace ConsoleApp2
                 {
                     Console.Write("Enter the sex: ");
                     sex[i] = Console.ReadLine().ToUpper();
-                    if(sex[i] != "M" && sex[i] != "F")
+                    if (sex[i] != "M" && sex[i] != "F")
                     {
                         Console.WriteLine("Enter a valid sex.");
                     }
@@ -31,11 +31,15 @@ namespace ConsoleApp2
                 Console.Write("Enter the age: ");
                 age[i] = Convert.ToInt32(Console.ReadLine());
             }
-
-            for(var i = 0; i < 3; i++)
+            Console.WriteLine("Checking only females...");
+            for (var i = 0; i < 3; i++)
             {
-
+                if(sex[i] == "F")
+                {
+                    Console.WriteLine("The name is {0}, she is F and has {1} years.", name[i], age[i]);
+                }
             }
+            Console.ReadLine();
         }
     }
 }
