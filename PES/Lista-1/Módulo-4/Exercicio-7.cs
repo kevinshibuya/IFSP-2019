@@ -28,8 +28,16 @@ namespace ConsoleApp2
                     }
                 }
                 while (sex[i] != "M" && sex[i] != "F");
-                Console.Write("Enter the age: ");
-                age[i] = Convert.ToInt32(Console.ReadLine());
+                do
+                {
+                    Console.Write("Enter the age: ");
+                    age[i] = Convert.ToInt32(Console.ReadLine());
+                    if(age[i] <= 0)
+                    {
+                        Console.WriteLine("Age must be greater than 0.");
+                    }
+                }
+                while (age[i] <= 0);
             }
             Console.WriteLine("Checking only females...");
             for (var i = 0; i < 3; i++)
