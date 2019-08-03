@@ -1,0 +1,10 @@
+c:\users\aluno\source\repos\ads271-poo\ads271-poo\bin\Debug\ads271-poo.exe.config
+c:\users\aluno\source\repos\ads271-poo\ads271-poo\bin\Debug\ads271-poo.exe
+c:\users\aluno\source\repos\ads271-poo\ads271-poo\bin\Debug\ads271-poo.pdb
+c:\users\aluno\source\repos\ads271-poo\ads271-poo\obj\Debug\ads271-poo.csprojAssemblyReference.cache
+c:\users\aluno\source\repos\ads271-poo\ads271-poo\obj\Debug\ads271_poo.formMedia.resources
+c:\users\aluno\source\repos\ads271-poo\ads271-poo\obj\Debug\ads271_poo.Properties.Resources.resources
+c:\users\aluno\source\repos\ads271-poo\ads271-poo\obj\Debug\ads271-poo.csproj.GenerateResource.cache
+c:\users\aluno\source\repos\ads271-poo\ads271-poo\obj\Debug\ads271-poo.csproj.CoreCompileInputs.cache
+c:\users\aluno\source\repos\ads271-poo\ads271-poo\obj\Debug\ads271-poo.exe
+c:\users\aluno\source\repos\ads271-poo\ads271-poo\obj\Debug\ads271-poo.pdb
