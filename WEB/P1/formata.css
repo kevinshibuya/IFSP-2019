@@ -1,0 +1,22 @@
+.tabela {
+    border-collapse:collapse;
+    border: 1px solid black;
+    margin-left:auto;
+	margin-right:auto;
+    
+}
+
+.tabela tr > td{
+    width: 110px;
+    height: 110px;   
+    border: 1px solid black; 
+    text-align: center;
+}
+
+.show {
+    display: hidden;
+}
+
+.hide {
+    display: none;
+}
