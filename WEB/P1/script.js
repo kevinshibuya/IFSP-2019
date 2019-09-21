@@ -1,18 +1,18 @@
-difficulty.addEventListener('change', function() {
+var pares = 0;
+var imagesNumber = parseInt(difficulty.value);
+
+difficulty.addEventListener('change', Teste);
+
+function Teste(){
     var sorteados = [""];
     sorteados[0] = "0";
-    var difficulty = document.getElementById("difficulty");
-    var row1 = document.getElementById("row1");
-    var row2 = document.getElementById("row2");
-    var row3 = document.getElementById("row3");
-    var row4 = document.getElementById("row4");
     var imagens = [""];
-    var imagesNumber = parseInt(difficulty.value);
+    imagesNumber = parseInt(difficulty.value);
     var imagem1;
     var imagem2;
     var passou = false;
     var contaSelecao = 1;
-    var pares = 0;
+    pares = 0;
 
     for (var i = 0; i < imagesNumber; i++) {
         imagens[i] = ("0".concat(i + 1)).toString().substr(-2) + ".png"
@@ -85,13 +85,19 @@ difficulty.addEventListener('change', function() {
     }
     
     function validaImagens() {
+        var matchScore = imagesNumber;
+        var almostThere = Math.floor((matchScore / 2) + 1);
+        console.log(almostThere);
         if (imagem2.src != imagem1.src) {
             imagem1.style.visibility = "hidden";
             imagem2.style.visibility = "hidden";
         } else {
             pares++;
             console.log(pares);
-            if (pares === imagesNumber) {
+            console.log(matchScore);
+            if (pares === almostThere) {
+                alert('Você está quase lá!');
+            } else if (pares === matchScore) {
                 alert('Parabens!');
                 pares = 0;
                 imagem1 = null;
@@ -159,9 +165,6 @@ difficulty.addEventListener('change', function() {
         }
     }
 
+    console.log(pares)
     console.log(imagesNumber);
-});
-     
-function Teste(){
-    window.location.reload();
 }
